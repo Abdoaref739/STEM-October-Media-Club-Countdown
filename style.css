@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "TitleFont";
+    src: url("./fonts/BLKCHCRY.TTF");
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+.main-text-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 230px;
+    font-family: "TitleFont", sans-serif;
+    margin-top: 5%;
+}
+.main-text-div > span{
+    font-size: 30px;
+}
+.main-text{
+    font-size: 70px;
+    color: #ff0000;
+}
+#countdown-div{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: 300px;
+}
+.countdown-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: auto;
+    margin-left: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: white;
+}
+.countdown-box > h1{
+    font-family: "TitleFont", sans-serif;
+    font-size: 120px;
+}
+.countdown-box > span{
+    font-family: "TitleFont", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+footer{
+    margin-top: 30px;
+    font-family: "TitleFont", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+footer > span{
+    color: #ff0000;
+}
