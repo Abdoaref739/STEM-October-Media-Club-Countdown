@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
   }
 .main-text-div{
     display: flex;
@@ -34,6 +35,7 @@ body{
     flex-direction: row;
     width: 85%;
     height: 300px;
+    margin-left: 0;
 }
 .countdown-box{
     display: flex;
@@ -64,4 +66,44 @@ footer{
 }
 footer > span{
     color: #ff0000;
+}
+@media screen and (max-width: 1180px){
+    .main-text{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 780px){
+    .main-text{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 500px){
+    .main-text{
+        font-size: 35px;
+        text-align: justify;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .main-text-div > span{
+    font-size: 20px;
+    }
+    #countdown-div{
+        flex-direction: column;
+        margin-left: 40%;
+        margin-top: -50px;
+    }
+    .countdown-box{
+        width: 50%;
+        margin-top: 20px;
+    }
+    .countdown-box > h1 {
+        font-size: 90px;
+    }
+    .countdown-box > span {
+        font-size: 25px;
+    }
+    footer{
+        margin-top: 100%;
+        font-size: 15px;
+    }
 }
