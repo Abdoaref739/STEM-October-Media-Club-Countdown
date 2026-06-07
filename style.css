@@ -39,8 +39,8 @@ body::selection{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 72%;
-    right: -70px;
+    margin-bottom: 80%;
+    right: 0px;
 }
 #clock-line{
     position: absolute;
@@ -107,6 +107,23 @@ body::selection{
     font-family: "TitleFont", sans-serif;
     font-size: 40px;
     font-weight: 800;
+}
+#rsvp-btn{
+    width: 260px;
+    height: 65px;
+    background-color: #ff0000;
+    border: 2px solid #c00000;
+    border-radius: 10px;
+    border-bottom-width: 6px;
+    color: white;
+    font-family: "TitleFont", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+#rsvp-btn:hover{
+    border-bottom-width: 2px;
 }
 .socialmedia-section{
     display: flex;
@@ -181,6 +198,10 @@ footer > a{
     .countdown-box > span {
         font-size: 25px;
     }
+    #rsvp-btn{
+    position: absolute;
+    margin-top: 720px;
+    }
     footer{
         margin-top: 0;
         font-size: 18px;
@@ -191,7 +212,7 @@ footer > a{
         height: 200px;
         z-index: -1;
         margin-bottom: 450px;
-        left: 350px;
+        left: 300px;
     }
     #clock-line{
         height: 170px;
@@ -202,12 +223,12 @@ footer > a{
         margin-top: 350px;
     }
     .socialmedia-section{
-        margin-top: 50px;
+        margin-top: 10px;
     }
     #icon{
         font-size: 50px;
     }
     .socialmedia-title{
-        margin-top: 450px;
+        margin-top: 480px;
     }
 }
