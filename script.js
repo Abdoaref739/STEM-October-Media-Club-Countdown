@@ -23,3 +23,7 @@ if(days === 0 && hours === 0 && minutes === 0 && seconds === 0){
     clearInterval();
 }
 }, 1000);
+let RSVPbtn = document.getElementById("rsvp-btn");
+RSVPbtn.onclick = function(){
+    window.location.href = "https://forms.gle/8pmF5mu5XPDpx7KX7";
+}
