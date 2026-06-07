@@ -15,7 +15,7 @@ let minutes = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
 minutesCountdown.innerHTML = minutes;
 let seconds = Math.floor((dateDiff % (1000 * 60)) / (1000));
 secondsCountdown.innerHTML = seconds;
-clockLine.style.rotate += `5deg`;
+clockLine.style.rotate += '5deg';
 if(days === 0 && hours === 0 && minutes === 0 && seconds === 0){
     console.log("Ended!")
     clearInterval();
