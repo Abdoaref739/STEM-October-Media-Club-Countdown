@@ -3,6 +3,7 @@ var hoursCountdown = document.getElementById("hours-countdown");
 var minutesCountdown = document.getElementById("minutes-countdown");
 var secondsCountdown = document.getElementById("seconds-countdown");
 var clockLine = document.getElementById("clock-line");
+let rotation = 0;
 setInterval(() => {
 countDownTime = new Date("Jun 11, 2026 23:59:59").getTime();
 currentDate = new Date().getTime();
@@ -15,6 +16,8 @@ let minutes = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
 minutesCountdown.innerHTML = minutes;
 let seconds = Math.floor((dateDiff % (1000 * 60)) / (1000));
 secondsCountdown.innerHTML = seconds;
+rotation += 6;
+clockLine.style.rotate = rotation + "deg";
 if(days === 0 && hours === 0 && minutes === 0 && seconds === 0){
     console.log("Ended!")
     clearInterval();

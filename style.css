@@ -6,6 +6,17 @@
     font-family: "TitleFont";
     src: url("./fonts/BLKCHCRY.TTF");
 }
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+    border: 2px solid black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ff0000;
+    border-radius: 5px;
+}
 body{
     display: flex;
     justify-content: center;
@@ -25,16 +36,17 @@ body::selection{
     border-radius: 300px;
 }
 #circle1{
-    margin-bottom: 60%;
-    margin-left: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 72%;
+    right: -70px;
 }
 #clock-line{
     position: absolute;
     width: 5px;
-    height: 150px;
+    height: 250px;
     background-color: #ff0000;
-    margin-top: 30px;
-    margin-left: 170px;
     rotate: 0deg;
 }
 #circle2{
@@ -99,11 +111,12 @@ body::selection{
 .socialmedia-section{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
     width: 85%;
-    height: 350px;
+    height: auto;
     margin-top: 20px;
-    border: 3px solid black;
-    border-radius: 15px;
+    font-size: 80px;
 }
 .socialmedia-title{
     font-family: "TitleFont", sans-serif;
@@ -111,8 +124,14 @@ body::selection{
     margin-top: 80px;
     font-weight: 600;
 }
+#icon{
+    cursor: pointer;
+}
+#icon:hover {
+    color: #ff0000;
+}
 footer{
-    margin-top: 30px;
+    margin-top: 50px;
     font-family: "TitleFont", sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -122,6 +141,7 @@ footer > a{
     color: #ff0000;
     cursor: pointer;
 }
+
 @media screen and (max-width: 1180px){
     .main-text{
         font-size: 50px;
@@ -135,6 +155,7 @@ footer > a{
 @media screen and (max-width: 500px){
     body{
         overflow-y: visible;
+        overflow-x: hidden;
     }
     .main-text{
         font-size: 35px;
@@ -166,10 +187,14 @@ footer > a{
         margin-left: 20px;
     }
     #circle1{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         z-index: -1;
-        margin-top: -450px;
+        margin-bottom: 450px;
+        left: 350px;
+    }
+    #clock-line{
+        height: 170px;
     }
     #circle2{
         width: 250px;
@@ -179,7 +204,10 @@ footer > a{
     .socialmedia-section{
         margin-top: 50px;
     }
+    #icon{
+        font-size: 50px;
+    }
     .socialmedia-title{
-        margin-top: 430px;
+        margin-top: 450px;
     }
 }
