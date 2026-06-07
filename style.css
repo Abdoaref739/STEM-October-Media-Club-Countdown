@@ -11,8 +11,33 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden;
-  }
+    overflow: hidden;
+}
+.circle{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 4px solid #ff0000;
+    border-radius: 300px;
+}
+#circle1{
+    margin-top: -450px;
+    margin-left: 95%;
+}
+#clock-line{
+    position: absolute;
+    width: 5px;
+    height: 150px;
+    background-color: #ff0000;
+    margin-top: 30px;
+    margin-left: 170px;
+    rotate: 0deg;
+}
+#circle2{
+    margin-top: 40%;
+    margin-left: -80%;
+    z-index: -1;
+}
 .main-text-div{
     display: flex;
     flex-direction: column;
@@ -49,6 +74,11 @@ body{
     border-radius: 15px;
     background-color: white;
 }
+.countdown-box:hover{
+        border-color: #ff0000;
+        color: #ff0000;
+        box-shadow: 5px 5px 0 #ff0000;
+}
 .countdown-box > h1{
     font-family: "TitleFont", sans-serif;
     font-size: 120px;
@@ -78,8 +108,11 @@ footer > span{
     }
 }
 @media screen and (max-width: 500px){
+    body{
+        overflow-y: visible;
+    }
     .main-text{
-        font-size: 35px;
+        font-size: 40px;
         text-align: justify;
         padding-top: 2px;
         padding-bottom: 2px;
@@ -105,5 +138,16 @@ footer > span{
     footer{
         margin-top: 100%;
         font-size: 12px;
+    }
+    #circle1{
+        width: 250px;
+        height: 250px;
+        z-index: -1;
+        margin-top: -450px;
+    }
+    #circle2{
+        width: 250px;
+        height: 250px;
+        margin-top: 350px;
     }
 }
